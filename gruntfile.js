@@ -9,6 +9,8 @@ module.exports = grunt => {
 
 	if (!Array.isArray(root)) root = [root];
 
+	grunt.loadNpmTasks('grunt-livereload');
+
 	// Project configuration
 	grunt.initConfig({
 		pkg: grunt.file.readJSON('package.json'),

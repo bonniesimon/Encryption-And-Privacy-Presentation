@@ -20,13 +20,16 @@
 			link.type = 'text/css';
 			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
 			document.getElementsByTagName( 'head' )[0].appendChild( link );
-		</script>
+		</script>	
 	</head>
 	<body>
 		<div class="reveal">
 			<div class="slides">
 				<section data-transition="zoom" data-transition-speed="slow">
-					<h1>Enryption and Privacy</h1>
+					<h1>Encryption and Privacy</h1>
+				</section>
+				<section data-transition=" zoom" data-transition-speed="slow">
+					<h1>Encryption</h1>
 				</section>
 				<section data-transition="fade-in slide-out">
 					<h2>What is Encryption?</h2>
@@ -49,11 +52,44 @@
 					</section>
 					<section>
 						<h5>How does it work?</h5>
-						<p>It uses shifting of letters in the message by a particular number</p>
+						<p>Each letter in the message is shifted by a certain number of steps.</p>
 					</section>
 					<section>
 						<img src="./img/ceasar's cipher.png" height="400px" alt="">
 					</section>
+					<section>
+						<h5>Encryption End</h5>
+						<p>Key : 5</p>
+						<p>Plain Text: HELLO</p>
+						<p class="fragment">MJQQT</p>
+					</section>
+					<section>
+						<h5>Decryption </h5>
+						<p>Key?</p>
+						<p class="fragment">-5</p>
+					</section>
+					<section>
+						<h5>Disadvantage</h5>
+						<p class="fragment">But the problem is that for any message with 26 tries, you can crack the code.</p>
+					</section>
+				</section>
+				<section>
+					<p>"I can crack any encryption algo in the world"</p>
+				</section>
+				<section class="fade-in slide-out">
+					<p>So we can shift each letter by different amounts.</p>
+					<p class="fragment">10 bit key it'll take humans 10 billion possible solutions</p> 
+					<!-- SO 10 bitkeys are the solution? -->
+					<p class="fragment">But it'll only take a few minutes or seconds for a computer to crack this</p>
+				</section>
+
+				<section class="fade-in slide-out">
+					<p>Nowadays we use 256 bit encryption.</p>
+					<p class="fragment">Even if we have hundred thousand super computers and each trying a million billion keys every second, it'll take trillions and trillions of year to crack it.</p>
+				</section>
+				<section>
+					<p>"I can crack any encryption algo in the world"</p>
+					<p class="fragment"> Its not that these algorithms are hard to crack but that it'll take a long time.</p>
 				</section>
 				
 			</div>

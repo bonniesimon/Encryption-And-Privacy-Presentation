@@ -1604,3 +1604,50 @@ body {
 
 .zoomed .reveal .roll span:after {
   visibility: hidden; }
+
+/*--------------------------------------
+CUSTOM CSS
+*/--------------------------------------
+
+.meme-small{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+} 
+.meme-small img{
+  height: 300px;
+  width:auto;
+  margin-bottom: auto;
+}
+
+.image-right-side{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+/* .space-between{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+} */
+
+.image-gallery{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+
+.image-right-side img{
+  height: 100px;
+  width: auto;
+}
+
+/*--------------------------------------
+CUSTOM CSS Ends
+*/--------------------------------------
